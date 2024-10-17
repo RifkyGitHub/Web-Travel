@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 196, 0);
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 9999;
+    object-fit: cover;
+}
+header ul li{
+    font-family: system-ui,'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 20px;
+}
+.logo h1{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo h1 span:hover{
+    color: rgb(184, 184, 207);
+}
+.nav-link ul{
+    display: flex;
+    list-style: none;
+}
+.nav-link ul li a{
+    text-decoration: none;
+    margin-right: 5px;
+    padding: 25px;
+    font-size: 20px;
+    color: white;
+}
+.nav-link ul li a:hover{
+    color: rgb(255, 196, 0);
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+}
+.home{
+    position: relative;
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(171, 171, 201); */
+    /* background-image: url(istockphoto-1460007178-612x612.webp); */
+    /* background-size: cover; */
+}
+.home::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 98, 98, 0.42);
+    z-index: 3;
+}
+.img video{
+    position: absolute;/*(bisa dipindahkan kmn sj)*/
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+}
+.content{
+    z-index: 9998;
+}
+.content h2{
+    color: rgb(255, 196, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 50px;
+    font-size: 30px;
+    transition: all 2.6ms;
+}
+.content h2 span{
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.content h2 span:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 196, 0);
+}
+.content h1{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+.content a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color:rgb(255, 196, 0);
+    border-radius: 10px;
+}
+.content a:hover{
+    color: rgb(255, 196, 0);
+    background-color:white;
+}
+.home .content{ 
+    width: 70%;
+}
+.content h1 span{
+    color: rgb(209, 209, 221);
+}
+.text-card h1{
+    margin-top: 50px;
+    text-align: center;
+    font-family: system-ui, 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.text-card h1 .span1{
+    color: rgb(143, 143, 62);
+}
+.text-card h1 .span2{
+    color: rgb(145, 139, 132);
+}
+.text-card h1 .span3{
+    color: rgb(189, 121, 39);
+}
+.text-card h1 .span1:hover{
+    text-decoration: underline 5px;
+    text-decoration-color: rgb(145, 139, 132);
+}
+.text-card h1 .span2:hover{
+    text-decoration: underline 5px;
+    text-decoration-color: bisque;
+}
+.text-card h1 .span3:hover{
+    text-decoration: underline 5px;
+    text-decoration-color: rgb(255, 196, 0);
+}
+.content-card{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    margin: 1px;
+    margin-left: 30px;
+    margin-right: 100px;
+    text-align: center;
+}
+.content-card .card{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 0 5px;
+    margin: 70px;
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+.card h1{
+    font-family: system-ui,'Segoe UI' ,'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.content-card h1:hover{
+    text-decoration: underline 3px;
+    text-decoration-color: rgb(255, 196, 0);
+}
+.card p{
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(145, 139, 132);
+}
+.card a{
+    text-decoration: none;
+    padding: 15px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.card a:hover{
+    background-color: rgb(145, 139, 132);
+    color: rgb(255, 255, 255);
+}
+.content-kedua{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+}
+.img-kedua video{
+    position: absolute;/*(bisa dipindahkan kmn sj)*/
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+}
+.content-kedua::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+    z-index: 3;
+}
+.content-kedua .text{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    z-index: 3;
+}
+.content-kedua h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-left: 55px;
+}
+.content-kedua .span1{
+    color: rgb(255, 255, 255);
+}
+.content-kedua .span1:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 255, 255);
+}
+.content-kedua .span2{
+    color: rgb(255, 196, 0);
+}
+.content-kedua .span2:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 196, 0);
+}
+.content-kedua .span3{
+    color: rgb(214, 214, 0);
+}
+.content-kedua .span3:hover:hover{
+    text-decoration: underline;
+    text-decoration-color:  rgb(214, 214, 0)   ;
+}
+.content-kedua p{
+    margin-left: -80px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 50px;
+    width: 70%;
+    color: white;
+    font-size: 15px;
+}
+.content-kedua a{
+    position: absolute;
+    left: 250px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(255, 196, 0);
+    padding: 10px;
+    border-radius: 3px;
+}
+.content-kedua a:hover{
+    color: rgb(255, 196, 0);
+    background-color: rgb(241, 222, 159);
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
+.footer .indotravel{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.indotravel{
+    margin-left: 50px;
+}
+.footer .indotravel h1{
+    color: white;
+    margin-left: 100px;
+}
+.footer .indotravel h1 span{
+    color: rgb(255, 196, 0);
+}
+.footer .indotravel p{
+    margin-right :70%;
+    color: white;
+    text-align: justify;
+}
+.quicklinks{
+    position: relative;
+    bottom: 105px;
+    left: 43%;
+}
+.quicklinks ul li {
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+}
+.quicklinks ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+.quicklinks h1{
+    margin-left: 35px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contact{
+    position: relative;
+    bottom: 65px;
+    left: 35%;
+}
+.contact h2{
+    font-size: medium;
+    font-weight: 400;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.utkbatas{
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+.contact h3{
+    display: flex;
+    font-size: medium;
+    color: white;
+    font-weight: 400;
+    display: inline;
+}
+.footer2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin-bottom: 100px;
+    margin-left:40px ;
+    position: absolute;
+    bottom: -105px;
+}
